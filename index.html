@@ -4,10 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CV</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header class="header">
+        <div class="container header-wrapper">
+            <img class="header-avatar" src="./images/avatar.png" alt="avatar">
+            <div class="header-content">
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="#about" class="header-link">ABOUT</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#code" class="header-link">CODE</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#projects" class="header-link">PROJECTS</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#skills" class="header-link">SKILLS</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#contacts" class="header-link">CONTACTS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-info">
+                    <h1 class="header-title">EVGENII AGEEV</h1>
+                    <h2 class="header-subtitle">FRONT-END DEVELOPER</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main-content">
+        <div class="container main-content-wrapper">
+            <aside class="aside">
+                <section class="education">
+                    <h3 class="education-title">
+                        <span class="title-divider">EDUCATION</span>
+                    </h3>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <a href="https://www.youtube.com/@cs50/featured" class="education-link">CS50 lectures</a>
+                        </li>
+                        <li class="education-item">
+                            <a href="https://www.freecodecamp.org/" class="education-link">FreeCodeCamp</a>
+                        </li>
+                        <li class="education-item">
+                            <a href="https://htmlacademy.ru/" class="education-link">HTML Academy</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="skills" id="skills">
+                    <h3 class="skills-title">
+                        <span class="title-divider">SKILLS</span>
+                    </h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML</li>
+                        <li class="skills-item">CSS</li>
+                        <li class="skills-item">JavaScript</li>
+                        <li class="skills-item">Git</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="main">
+                <section class="main-about" id="about">
+                    <h3 class="main-title title-divider">ABOUT ME</h3>
+                    <p class="main-info">My goal is to gain knowledge in the field of front-end development.</p>
+                </section>
+                
+                <section class="main-code" id="code">
+                    <h3 class="main-code-title title-divider">CODE EXAMPLE</h3>
+                    <pre><code>
+                        function squareDigits(num) {
+                            const newStr = String(num);
+                            let result = '';
+                            for (let i = 0; i < newStr.length; i += 1) {
+                              result += newStr[i] * newStr[i];
+                            }
+                            return Number(result);
+                          }
+                      </code></pre>
+                </section>
+
+                <section class="main-projects" id="projects"></section>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
