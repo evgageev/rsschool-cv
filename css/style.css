@@ -13,12 +13,18 @@ header {
     margin: 50px 0;
 }
 
+a:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.header-wrapper {
+.header-wrapper,
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,20 +66,26 @@ header {
     width: 30%;
 }
 
-.main-content-wrapper {
+.main-content-wrapper,
+.projects-wrapper {
     display: flex;
     justify-content: space-between;
 }
-.education {
+
+.education,
+.contacts {
     margin-bottom: 50px;
 }
 
 .education-title,
 .skills-title,
-.main-title,
-.main-code-title {
+.about-title,
+.code-title,
+.projects_title,
+.contacts-title {
     margin-bottom: 20px;
     font-size: 28px;
+    text-transform: uppercase;
 }
 
 .title-divider {
@@ -81,39 +93,73 @@ header {
 }
 
 .education-list,
-.skills-list {
+.skills-list,
+.about-list,
+.contacts-list {
+    margin: 0 0 10px 10px;
     list-style: inside;
 }
 
-.education-item,
-.skills-item {
-    margin: 0 0 10px 10px;
-}
-
-.education-link {
+.education-link,
+.contacts-link {
     color: #000000;
     text-decoration: none;
 }
 
-/************* MAIN *************/
+/************* ABOUT *************/
 .main {
     width: 70%;
 }
 
-.main-about {
-    margin-bottom: 100px;
+.about {
+    margin-bottom: 50px;
+    padding-left: 10px;
 }
 
-.main-title,
-.main-code-title {
+.about-title,
+.code-title,
+.projects_title {
     text-align: right;
 }
 
-.main-info {
-    padding: 10px;
+.about-info {
+    margin-bottom: 15px;
+}
+
+.about-languages {
+    margin: 30px 0 10px;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 code {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/************* PROJECTS *************/
+.projects {
+    margin-bottom: 50px;
+}
+
+.projects-item {
+    text-align: center;
+}
+
+/************* FOOTER *************/
+footer {
+    color: #ffffff;
+    background-color: #942828;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.github-img {
+    padding: 30px 0;
+    margin-right: 10px;
 }

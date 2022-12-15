@@ -45,19 +45,34 @@
     <div class="main-content">
         <div class="container main-content-wrapper">
             <aside class="aside">
+
+                <section class="contacts" id="contacts">
+                    <h3 class="contacts-title">
+                        <span class="title-divider">CONTACTS</span>
+                    </h3>
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                GitHub: <a class="contacts-link" href="https://github.com/evgageev" target="_blank">evgageev</a>
+                            </li>
+                            <li class="contacts-item">
+                                Telegram: <a class="contacts-link" href="https://t.me/evgageev" target="_blank">@evgageev</a>
+                            </li>
+                        </ul>
+                </section>
+
                 <section class="education">
                     <h3 class="education-title">
                         <span class="title-divider">EDUCATION</span>
                     </h3>
                     <ul class="education-list">
                         <li class="education-item">
-                            <a href="https://www.youtube.com/@cs50/featured" class="education-link">CS50 lectures</a>
+                            <a href="https://www.youtube.com/@cs50/featured" class="education-link" target="_blank">CS50 lectures</a>
                         </li>
                         <li class="education-item">
-                            <a href="https://www.freecodecamp.org/" class="education-link">FreeCodeCamp</a>
+                            <a href="https://www.freecodecamp.org/" class="education-link" target="_blank">FreeCodeCamp</a>
                         </li>
                         <li class="education-item">
-                            <a href="https://htmlacademy.ru/" class="education-link">HTML Academy</a>
+                            <a href="https://htmlacademy.ru/" class="education-link" target="_blank">HTML Academy</a>
                         </li>
                     </ul>
                 </section>
@@ -76,18 +91,25 @@
             </aside>
 
             <main class="main">
-                <section class="main-about" id="about">
-                    <h3 class="main-title title-divider">ABOUT ME</h3>
-                    <p class="main-info">My goal is to gain knowledge in the field of front-end development.</p>
+                <section class="about" id="about">
+                    <h3 class="about-title title-divider">ABOUT ME</h3>
+                    <p class="about-info">My goal is to gain knowledge in the field of front-end development.</p>
+                    <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maiores, quae aut fugiat tenetur commodi, molestiae numquam doloremque quas animi perferendis eius exercitationem officiis earum velit illum doloribus obcaecati. Molestias?</p>
+                    <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maiores, quae aut fugiat tenetur commodi, molestiae numquam doloremque quas animi perferendis eius exercitationem officiis earum velit illum doloribus obcaecati. Molestias?</p>
+                    <h4 class="about-languages">LANGUAGES:</h4>
+                    <ul class="about-list">
+                        <li class="about-item">Russian - native speaker</li>
+                        <li class="about-item">English - A2 (B1 in proccess...)</li>
+                    </ul>
                 </section>
                 
-                <section class="main-code" id="code">
-                    <h3 class="main-code-title title-divider">CODE EXAMPLE</h3>
+                <section class="code" id="code">
+                    <h3 class="code-title title-divider">CODE EXAMPLE</h3>
                     <pre><code>
                         function squareDigits(num) {
                             const newStr = String(num);
                             let result = '';
-                            for (let i = 0; i < newStr.length; i += 1) {
+                            for (let i = 0; i &lt; newStr.length; i += 1) {
                               result += newStr[i] * newStr[i];
                             }
                             return Number(result);
@@ -95,9 +117,36 @@
                       </code></pre>
                 </section>
 
-                <section class="main-projects" id="projects"></section>
+                <section class="projects" id="projects">
+                    <h3 class="projects_title title-divider">PROJECTS</h3>
+                    <div class="projects-wrapper">
+                        <div class="projects-item">
+                            <a class="project-link" href="https://www.meme-arsenal.com/memes/a4ed7cb22429fb17faa848c5de01d9f5.jpg" target="_blank">
+                                <img src="https://picsum.photos/300/200" alt="project1">
+                            </a>
+                            <p class="project-desc">Placeholder project #1</p>
+                        </div>
+                        <div class="projects-item">
+                            <a class="project-link" href="https://www.meme-arsenal.com/memes/a4ed7cb22429fb17faa848c5de01d9f5.jpg" target="_blank">
+                                <img src="https://picsum.photos/300/200" alt="project2">
+                            </a>
+                            <p class="project-desc">Placeholder project #2</p>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container footer-wrapper">
+            <a class="github-link" href="https://github.com/evgageev" target="_blank">
+                <img class="github-img" src="./images/github-mark-white.svg" height="30" alt="github-mark">My GitHub
+            </a>
+            <p class="footer-year">2022</p>
+            <a class="rsschool-link" href="https://rs.school/js/" target="_blank">
+                <img class="rs-school-img" src="https://rs.school/images/rs_school_js.svg" height="30" alt="rs-school-logo">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
