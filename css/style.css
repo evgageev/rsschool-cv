@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+header {
+    margin: 50px 0;
+}
+
+a:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header-wrapper,
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-avatar {
+    width: 30%;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.header-link {
+    padding-bottom: 2px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+}
+
+.header-title {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 22px;
+}
+
+/************* ASIDE *************/
+.aside {
+    width: 30%;
+}
+
+.main-content-wrapper,
+.projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education,
+.contacts {
+    margin-bottom: 50px;
+}
+
+.education-title,
+.skills-title,
+.about-title,
+.code-title,
+.projects_title,
+.contacts-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.title-divider {
+    border-bottom: 3px solid #000000;
+}
+
+.education-list,
+.skills-list,
+.about-list,
+.contacts-list {
+    margin: 0 0 10px 10px;
+    list-style: inside;
+}
+
+.education-link,
+.contacts-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/************* ABOUT *************/
+.main {
+    width: 70%;
+}
+
+.about {
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.about-title,
+.code-title,
+.projects_title {
+    text-align: right;
+}
+
+.about-info {
+    margin-bottom: 15px;
+}
+
+.about-languages {
+    margin: 30px 0 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+code {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/************* PROJECTS *************/
+.projects {
+    margin-bottom: 50px;
+}
+
+.projects-item {
+    text-align: center;
+}
+
+/************* FOOTER *************/
+footer {
+    color: #ffffff;
+    background-color: #942828;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.github-img {
+    padding: 30px 0;
+    margin-right: 10px;
+}
